@@ -1,0 +1,87 @@
+*  {
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+/***** Form Styling *****/
+h1 {
+    margin-bottom: 50px;
+    font-size: 230%;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+label { font-size: 150%; }
+
+button { font-size: 130%; }
+
+form:after {
+    display: block;
+    height: 1px;
+    background-color: #000;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+/***** Table Styling *****/
+
+table {
+    width: 60%;
+    margin: 0 auto;
+}
+table, th {
+    border: 1px solid #000;
+}
+
+td { text-align: center; }
+
+
+
+/***** Grid.css Code *****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after { clear:both; }
+
+.col {
+	display: block;
+	float:left;
+}
+
+@media only screen and (max-width: 480px) { .col { margin: 0; } }
+
+.span-2-of-3 { width: 66.13%; }
+
+.span-1-of-3 { width: 32.26%; }
+
+@media only screen and (max-width: 480px) {
+	.span-2-of-3 { width: 100%; }
+	.span-1-of-3 { width: 100%; }
+}
+
+
+
